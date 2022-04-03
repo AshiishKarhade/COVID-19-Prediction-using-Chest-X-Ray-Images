@@ -73,6 +73,7 @@ train_dir = '/content/covid19-radiography-database/TRAIN'
 test_dir = '/content/covid19-radiography-database/TEST'
 
 datagen = ImageDataGenerator(rescale = 1./255,)
+#pixel_value = [0, 255] -> [0, 1]
 
 train_dataset = datagen.flow_from_directory(
     train_dir,
